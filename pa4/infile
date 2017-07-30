@@ -1,0 +1,12 @@
+#! /bin/bash
+# ---------------------
+# infile
+# ---------------------
+
+echo compiling Roots.java
+javac Roots.java > Roots-errs
+echo running Roots.class
+java Roots < Roots-in > Roots-out
+echo deleting Roots.class
+rm Roots.class
+
