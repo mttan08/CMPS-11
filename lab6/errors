@@ -1,0 +1,12 @@
+// errors
+// Matthew Tan
+// mxtan
+// lab6
+// This text file describe all the error that I have found
+// in the executable LetterHome.class.
+
+1) On line 2, the word "ERROR" is printed instead
+2) One line 3, the word "ERROR" is printed instead
+4) The word "books" should be "book"
+5) On line 6, the word "ERROR" is printed and missing a period
+6) Some of the errors repeat as the errors are still there

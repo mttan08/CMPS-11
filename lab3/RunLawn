@@ -1,0 +1,15 @@
+# ! /bin/bash
+# Matthew Tan
+# mxtan
+# lab3
+# cs11
+# RunLawn runs, deletes, and prints out the results from Lawn.java
+
+echo "compiling Lawn.java"
+javac Lawn.java
+javac Lawn.java >&  Lawn-errs
+echo "running Lawn.class"
+java Lawn < Lawn-in > Lawn-out
+echo "deleting Lawn.class"
+rm Lawn.class
+

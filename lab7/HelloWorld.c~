@@ -1,0 +1,8 @@
+/* HelloWorld.c */
+
+#include<stdio.h>
+public int main()
+{
+    printf("Hello, World!\n");
+    return 0;
+}

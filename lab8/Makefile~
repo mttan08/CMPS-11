@@ -1,0 +1,24 @@
+# Makefile for lab8
+# Matthew Tan
+# mxtan
+# lab8
+# Creates the Makefile for lab8
+# ------------------------------------------------
+CC=gcc
+CFLAGS=-I
+DEPS = Makefile.h
+OBJ = Makefile.o GCD.o
+
+%o %.c S(DEPS)
+	S(CC) -c -o @ $< $(CFLAGS)
+
+Makefile: $(OBJ)
+gcc -o $@ $^ $(CFLAGS)
+
+.PHONY: clean
+
+clean:
+	rm -rf GCD.c
+
+submit:
+	submit cmps011-pt.w16 lab8 GCD.c Makefile
